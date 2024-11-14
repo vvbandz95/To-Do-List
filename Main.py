@@ -19,10 +19,9 @@ def view_tasks():
         print("The to-do list is empty.")
     else:
         print("\nYour Tasks:")
-        index = 1 
-        for task in user_tasks:
+        for index, task in enumerate(user_tasks, start=1):
             print(f"{index}. {task}")
-            index += 1
+
 
 def delete_task():
     try:
